@@ -1,0 +1,58 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.dot-grid-background {
+  position: fixed;  /* sticks to viewport */
+  inset: 0;         /* covers full screen */
+  z-index: -1;      /* pushes it behind everything */
+}
+
+.content {
+  position: relative;
+  z-index: 1;       /* ensures content is above */
+  padding: 2rem;
+  color: white;     /* adjust contrast */
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dot-grid-background {
+  height: 100%;
+  width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* removes horizontal scrollbar */
+  }
+  @media (max-width: 768px) {
+  #home {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;  /* prevent spacing out */
+    align-items: center !important;
+    text-align: center !important;
+    padding: 6rem 5% 2rem 5% !important; /* top padding + less bottom */
+    min-height: auto !important;  /* remove forced 100vh */
+  }
+
+  .hero-text {
+    margin-top: 2rem !important;   /* push text a bit down */
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-logo {
+    margin-top: 1rem !important;   /* pull logo closer */
+  }
+
+  .hero-logo img {
+    height: 160px !important; /* scale for mobile */
+    width: auto !important;
+  }
+}
