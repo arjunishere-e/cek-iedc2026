@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import DotGrid from "./components/DotGrid";
-import About from "./components/About";
-import Event from "./components/Event";
-import Execome from "./components/Execome";
-import Hexis from "./components/Hexis"; 
-import Femina from "./components/Femina";
-import Incepta from "./components/Incepta"; 
-import Ai from "./components/Ai";
-import Iot from "./components/Iot";
-import Registration from "./components/Registration"; // ✅ added
+import DotGrid from "../components/DotGrid";
+import About from "../components/About";
+import Event from "../components/Event";
+import Execome from "../components/Execome";
+import Hexis from "../components/Hexis"; 
+import Femina from "../components/Femina";
+import Incepta from "../components/Incepta"; 
+import Ai from "../components/Ai";
+import Iot from "../components/Iot";
+import Registration from "../components/Registration"; // ✅ added
 
-import logo from "./assets/logo.png";
+import logo from "../assets/logo.png";
 
 // HomePage component (your current main layout)
 const HomePage: React.FC = () => {
